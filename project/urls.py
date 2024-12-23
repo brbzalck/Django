@@ -16,23 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
+from home import views as home_views
+from blog import views as blog_views
 
 # HTPP Resquest <-> HTTP Response
-# MTV (MVC)
-
-
-#  função que representa uma view
-def home(request):
-    print('Posso fazer ações nesse meio tempo')
-    return HttpResponse('Página inicial')
-
-def blog(request):
-    print('Posso fazer ações nesse meio tempo')
-    return HttpResponse('blog')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', blog),
-    path('', home),
+    path('blog/', blog_views.blog),
+    path('', home_views.home),
 ]
