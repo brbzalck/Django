@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 
@@ -10,8 +9,14 @@ from django.http import HttpResponse
 #  função que representa uma view
 def blog(request):
     print('Posso fazer ações nesse meio tempo')
-    return HttpResponse('Blog do app 1')
+    return render(
+        request,
+        'blog/index.html'
+        )
 
 def exemplo(request):
     print('Posso fazer ações nesse meio tempo')
-    return HttpResponse('Exemplo do app 1')
+    return render(
+        request,
+        'blog/exemplo.html'
+        )
