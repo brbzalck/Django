@@ -10,4 +10,4 @@ from django.http import HttpResponse
 #  função que representa uma view
 def home(request):
     print('Posso fazer ações nesse meio tempo')
-    return HttpResponse('Home do app')
+    return HttpResponse('Home do app 1')
