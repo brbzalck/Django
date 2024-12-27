@@ -9,14 +9,29 @@ from django.shortcuts import render
 #  função que representa uma view
 def blog(request):
     print('Posso fazer ações nesse meio tempo')
+
+    contextBlog = {
+        'text': 'Olá Blog',
+        'title': 'Blog - '
+    }
+
     return render(
         request,
-        'blog/index.html'
+        'blog/index.html',
+        contextBlog,
         )
 
 def exemplo(request):
     print('Posso fazer ações nesse meio tempo')
+
+    contextExemplo = {
+        'text': 'Olá Exemplo',
+        'title': 'Exemplo - '
+        
+    }
+
     return render(
         request,
-        'blog/exemplo.html'
+        'blog/exemplo.html',
+        contextExemplo,
         )

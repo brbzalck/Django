@@ -9,7 +9,14 @@ from django.shortcuts import render
 #  função que representa uma view
 def home(request):
     print('Posso fazer ações nesse meio tempo')
+
+    context = {
+            'text': 'Olá Home',
+        'title': 'Home - '
+        }
+
     return render(
         request,
-        'home/index.html' 
+        'home/index.html',
+        context
           )
