@@ -21,13 +21,14 @@ def blog(request):
         contextBlog,
         )
 
+
 def exemplo(request):
     print('Posso fazer ações nesse meio tempo')
 
     contextExemplo = {
         'text': 'Olá Exemplo',
         'title': 'Exemplo - '
-        
+
     }
 
     return render(

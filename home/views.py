@@ -11,7 +11,7 @@ def home(request):
     print('Posso fazer ações nesse meio tempo')
 
     context = {
-            'text': 'Olá Home',
+        'text': 'Olá Home',
         'title': 'Home - '
         }
 
