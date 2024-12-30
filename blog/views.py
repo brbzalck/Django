@@ -23,6 +23,21 @@ def blog(request):
         contextBlog,
         )
 
+def post(request, id):
+    print('post', id)
+
+    contextBlog = {
+        'text': 'Olá Blog',
+        'title': 'Blog - ',
+        'posts': posts
+    }
+
+    return render(
+        request,
+        'blog/index.html',
+        contextBlog,
+        )
+
 
 def exemplo(request):
     print('Posso fazer ações nesse meio tempo')
