@@ -30,6 +30,32 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 20%);
 }
 
+a {
+  color: rgb(60, 60, 231);
+  text-decoration: None;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  background: #000;
+  padding: 1.5rem;
+
+}
+
+.menu__links a {
+  display: block;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+.menu__links {
+  list-style: None;
+  display: flex;
+}
+
 @media (min-width: 600px) {
   .content:not(:has(.single-post)) {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
