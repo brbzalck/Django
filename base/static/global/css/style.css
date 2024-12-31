@@ -51,6 +51,10 @@ a:hover {
   padding: 1.5rem;
 }
 
+.tittleh1 {
+  padding: 1.5rem;
+}
+
 .menu__links {
   list-style: None;
   display: flex;
