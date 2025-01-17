@@ -2,8 +2,10 @@ from django.urls import path
 from . import views
 
 # HTPP Resquest <-> HTTP Response
+app_name = 'blog'
 
 urlpatterns = [
-    path('', views.blog),
-    path('exemplo/', views.exemplo),
+    path('', views.blog, name='blog'),
+    path('<int:post_id>/', views.post, name='post'),
+    path('exemplo/', views.exemplo, name='exemplo'),
 ]
